@@ -1,4 +1,9 @@
 source 'https://rubygems.org'
 
 # Specify your gem's dependencies in wordstats.gemspec
+gem 'engtagger'
+gem 'rake'
+
 gemspec
+
+gem 'rspec'

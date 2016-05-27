@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kevin Niu"]
   spec.email         = ["kev.niu@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = 'Wordstats provides users information regarding the sentence structure of your writing samples including average sentence length, most commonly used words, and word count.'
+  spec.description   = 'A unique gem that allows users to gather analysis of literary statistics and usage.'
+  spec.homepage      = 'https://github.com/kevniu/Word-Stats'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -28,7 +28,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "engtagger"
-  spec.add_dependency "spec_helper"
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
