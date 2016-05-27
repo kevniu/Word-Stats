@@ -72,7 +72,8 @@ class Wordstats
       word_arr = sentence.split(' ')
       sentence_length_arr << word_arr.length
     end
-    sentence_length_arr.reduce(:+) / sentence_length_arr.length
+    sum = sentence_length_arr.reduce(:+)
+    sum / sentence_length_arr.length
   end
 
 end
