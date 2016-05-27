@@ -8,10 +8,11 @@ class Wordstats
   end
 
   def process(str)
-    p word_count(str)
-    p avg_word_length(str)
-    p most_common_noun(str)
-    p most_common_word(str)
+    word_count(str)
+    avg_word_length(str)
+    most_common_noun(str)
+    most_common_word(str)
+    avg_sentence_length(str)
   end
 
   def word_count(str)

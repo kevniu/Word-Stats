@@ -5,8 +5,6 @@ describe Wordstats do
     expect(Wordstats::VERSION).not_to be nil
   end
 
-
-
   describe 'wordstats' do
     let(:wordstats) { Wordstats.new }
     let(:input) { 'The fat cat jumped over the house. Another fat cat wandered into the yard.' }
