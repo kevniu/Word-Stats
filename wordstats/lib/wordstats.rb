@@ -8,11 +8,11 @@ class Wordstats
   end
 
   def process(str)
-    word_count(str)
-    avg_word_length(str)
-    most_common_noun(str)
-    most_common_word(str)
-    avg_sentence_length(str)
+    p "Word Count: " + word_count(str).to_s
+    p "Average Word Length: " + avg_word_length(str).to_s
+    p "Most Common Noun: " + most_common_noun(str).to_s
+    p "Most Common Word: " + most_common_word(str).to_s
+    p "Average Sentence Length: " + avg_sentence_length(str).to_s + " words"
   end
 
   def word_count(str)
@@ -26,7 +26,8 @@ class Wordstats
     word_arr.each do |word|
       word_length_arr << word.length
     end
-    word_length_arr.reduce(:+) / word_length_arr.length
+    sum = word_length_arr.reduce(:+)
+    sum / word_length_arr.length
   end
 
   def most_common_noun(str)
@@ -72,7 +73,8 @@ class Wordstats
       word_arr = sentence.split(' ')
       sentence_length_arr << word_arr.length
     end
-    sentence_length_arr.reduce(:+) / sentence_length_arr.length
+    sum = sentence_length_arr.reduce(:+)
+    sum / sentence_length_arr.length
   end
 
 end
